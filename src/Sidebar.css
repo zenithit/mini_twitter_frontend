@@ -1,0 +1,5 @@
+.siderbar_twitter_button > .MuiButtonBase-root {
+	border-radius: 30 !important;
+	text-transform: inherit !important;
+	font-weight: 900 !important;
+}
