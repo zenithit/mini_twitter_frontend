@@ -1,4 +1,19 @@
-.siderbar_twitter_button > .MuiButtonBase-root {
+.sidebar {
+	border-right: 1px solid;
+	flex: 0.2;
+	min-width: 250px;
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.sidebar_twitterIcon {
+	margin-left: 30px;
+	margin-bottom: 30px;
+	color: skyblue;
+}
+
+.siderbar__button {
 	border-radius: 30 !important;
 	text-transform: inherit !important;
 	font-weight: 900 !important;

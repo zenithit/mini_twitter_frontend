@@ -10,13 +10,14 @@ import "./Sidebar.css"
 
 function Sidebar() {
 	return ( 
-		<div>
-			<TwitterIcon />
+		<div className="sidebar">
+			<TwitterIcon className="sidebar_twitterIcon"/>
 			<SidebarOption Icon={HomeIcon} text="Home"/>
 			<SidebarOption Icon={SearchIcon} text="Explore"/>
 			<SidebarOption Icon={PersonIcon} text="Profile"/>
 			<SidebarOption Icon={ListIcon} text="List"/>
-			<Button variant="contained" size="large" color="primary">Tweet</Button>
+			<Button variant="contained" size="large" color="primary" 
+			style={{borderRadius: "50px", marginTop: "50px"}}>Tweet</Button>
 		</div>
 	)
 }

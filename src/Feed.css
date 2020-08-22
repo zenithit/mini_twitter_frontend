@@ -1,0 +1,15 @@
+.feed {
+	flex: 0.7;
+	/*min-width: fit-content;*/
+	overflow-y: scroll;
+	/*border-right: 1px solid blue; */
+}
+
+.feed_header {
+	position: sticky;
+	top: 0;
+	background-color: rgb(10,150,200);
+	z-index: 99; 
+	border: 1px solid blue;
+	padding: 25px 50px;
+}

@@ -1,0 +1,23 @@
+.tweetBox {
+	padding-bottom: 10px;
+	border-bottom: 4px solid rgb(100,100,150);
+	padding-right: 10px;
+}
+
+.tweetBox > form {
+	display: flex;
+	flex-direction: column;
+}
+
+.tweetBoxInput {
+	padding: 20px;
+	display: flex;
+}
+
+.tweetBoxInput > input {
+	flex: 1;
+	padding: 30px;
+	border: dotted;
+	font-size: 20px;
+	margin-left: 10px;
+}
