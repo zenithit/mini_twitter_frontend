@@ -1,15 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./TweetBox.css"
 import { Button } from "@material-ui/core"
 
 function TweetBox() {
+  
+  const [tweetMessage, setTweetMessage] = useState("")
+  
+  const sendTweet = (event) => {
+  	event.preventDefault();
+
+  	setTweetMessage("")
+  }
+
   return (
     <div className="tweetBox">
 	    <form>
 	    	<div className="tweetBoxInput">
-	    		<input placeholer="Your Tweet" type="text" />
+	    		<input 
+		    		placeholder="Your Tweet" 
+		    		type="text"
+		    		onChange={(event)=>setTweetMessage(event.target.value)}
+		    		value={tweetMessage} />
 	    	</div>
-	    	<Button variant="contained" color="primary">Tweet</Button>
+	    	<Button type="submit" 
+	    			variant="contained" 
+	    			color="primary"
+	    			onClick={sendTweet}>Tweet</Button>
 	    </form>
     </div>
   )
