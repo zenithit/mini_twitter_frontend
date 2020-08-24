@@ -14,7 +14,8 @@ function Post(props)  {
 					</span>
     			</div>
     			<div className="postHeaderDescription">
-    				{props.content}
+                    {props.title}    				
+                    {props.content}
     			</div>
     		</div>
     	</div>

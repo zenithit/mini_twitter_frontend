@@ -9,6 +9,21 @@ function TweetBox() {
   const sendTweet = (event) => {
   	event.preventDefault();
 
+	fetch('http://localhost:3001/v1/posts', {
+    method: 'POST',
+    body: JSON.stringify({
+      title: 'Random Title',
+      body: tweetMessage,
+      user_id: 4
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+      "token": "ThsV6rtZos_WwVFNusFJ"
+    }
+  })
+  .then(response => response.json())
+  .then(json => console.log(json))
+
   	setTweetMessage("")
   }
 
