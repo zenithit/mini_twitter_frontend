@@ -9,7 +9,7 @@ function TweetBox() {
   const sendTweet = (event) => {
   	event.preventDefault();
 
-	fetch('http://localhost:3001/v1/posts', {
+	fetch('https://jsonplaceholder.typicode.com/posts', {
     method: 'POST',
     body: JSON.stringify({
       title: 'Random Title',
@@ -22,8 +22,7 @@ function TweetBox() {
 	    }
 	})
 	.then(response => response.json())
-	.then(json => console.log(json))
-
+	
   	setTweetMessage("")
   }
 

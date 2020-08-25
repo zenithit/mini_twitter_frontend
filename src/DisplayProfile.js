@@ -12,7 +12,6 @@ const DisplayProfile = (props) => {
       getData().then((data) => setData(data))
     }, [])
 
-   console.log(data)
   return (
     <div>
     	<User name={data.name} username={data.username} email={data.email} phone={data.phone} />
