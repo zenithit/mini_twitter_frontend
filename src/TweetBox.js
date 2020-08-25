@@ -19,10 +19,10 @@ function TweetBox() {
     headers: {
       "Content-type": "application/json; charset=UTF-8",
       "token": "ThsV6rtZos_WwVFNusFJ"
-    }
-  })
-  .then(response => response.json())
-  .then(json => console.log(json))
+	    }
+	})
+	.then(response => response.json())
+	.then(json => console.log(json))
 
   	setTweetMessage("")
   }

@@ -1,14 +1,13 @@
 import React from 'react';
-import Sidebar from "./Sidebar"
-import Feed from "./Feed"
 import "./App.css"
-import LogIn from "./LogIn"
+import WhichComponent from "./WhichComponent"
 
 function App() {
      
   return (
     <div className="App">
-    	<LogIn />
+    	
+    	<WhichComponent />
 
     </div>
   )
@@ -16,7 +15,3 @@ function App() {
 }
 
 export default App
- 
-
-     // 	//<Sidebar />
-    	// <Feed />

@@ -16,7 +16,6 @@ function Feed() {
    useEffect(() => {
       getData().then((data) => setData(data))
     }, [])
-  console.log(data)
   
   return (
     <div className="feed">
