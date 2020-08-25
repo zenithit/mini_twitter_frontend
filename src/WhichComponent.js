@@ -1,16 +1,21 @@
 import React from 'react';
 import Sidebar from "./Sidebar"
 import Feed from "./Feed"
+import SignUp from "./SignUp"
+import LogIn from "./LogIn"
+import "./SignUp.css"
 
 const WhichComponent = (props) => {
   
 	localStorage.clear();
 	localStorage.setItem('isLoggedIn', "true");
+	// console.log(localStorage.getItem('authentication_token'))
 
-	if(localStorage.getItem('isLoggedIn')=="false"){
+	if(localStorage.getItem('isLoggedIn')!="false"){
 		return( 
-			<div>
-				<login />
+			<div className="signUp">
+				<LogIn />
+				<SignUp />
 			</div>
 			)
 	} else{
@@ -24,3 +29,5 @@ const WhichComponent = (props) => {
 }
 
 export default WhichComponent;
+
+////<LogIn /><SignUp />
